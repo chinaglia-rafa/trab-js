@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #4caf50;
+  --primary-text: white;
+  --background: #fefefe;
+
+  --dark-color: #212121;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 16px 0;
+  background: var(--dark-color);
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  position: relative;
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap" rel="stylesheet">
+  <title>Task Manager</title>
+</head>
+<body>
+  <div class="modal" id="modal">
+    <div class="dialog">
+      <img src="assets/load.svg" width="100" height="100" alt="" class="loader">
+      <div class="dialog__title">Criando tarefa <span class="dialog__title__tip">[Alt + Enter] Salvar [Esc] Sair</span></div>
+      <div class="dialog__body">
+        <label class="label">
+          Nome da tarefa:
+          <input type="text" class="ipt" id="task-name">
+        </label>
+        <br />
+        <label class="label">
+          Descrição da tarefa:
+          <textarea class="ipt ipt--large" id="task-description"></textarea>
+        </label>
+      </div>
+    </div>
+  </div>
+  <header>
+    Mural de tarefas
+    <button id="addTask" class="btn header--right btn--animated">Nova tarefa (F2)</button>
+  </header>
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-bar__bar" style="background: #4caf50;"></div>
+    <div class="progress-bar__bar" style="background: #f44336;"></div>
+    <div class="progress-bar__bar" style="background: #9c27b0;"></div>
+    <div class="progress-bar__bar" style="background: #00bcd4;"></div>
+  </div>
+
+  <div class="main-container">
+    <div class="panel" id="todoColumn">
+      <div class="panel__header">A fazer</div>
+      <div class="panel__body"></div>
+    </div>
+
+    <div class="panel" id="progressColumn">
+      <div class="panel__header">Em progresso</div>
+      <div class="panel__body"></div>
+    </div>
+
+    <div class="panel" id="reviewColumn">
+      <div class="panel__header">Revisão</div>
+      <div class="panel__body">
+
+      </div>
+    </div>
+
+    <div class="panel" id="doneColumn">
+      <div class="panel__header">Completas</div>
+      <div class="panel__body">
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="Task.js"></script>
+<script src="TaskManager.js"></script>
+<script src="main.js"></script>
+</html>
