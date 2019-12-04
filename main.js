@@ -30,7 +30,7 @@ window.onload = function(event) {
     if (e.key == 'F2') {
       abrir();
     }
-    if (e.key == 'Escape') {
+    if (e.key == 'Escape')  {
       fechar();
     }
     if (e.key == 'Enter' && e.altKey == true) {
